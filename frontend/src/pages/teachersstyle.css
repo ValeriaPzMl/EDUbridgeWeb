@@ -1,0 +1,54 @@
+.genn {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajusta el número de columnas dinámicamente */
+  gap: 20px; /* Espaciado entre las tarjetas */
+  padding: 20px; /* Agrega padding para separarlo de los bordes */
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 576px) {
+  .genn {
+      grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+      gap: 15px;
+  }
+}
+
+.profile-card {
+    background-color: #171934; /* color3 */
+    color: #e2e2e2; /* color5 */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Hace que las tarjetas ocupen todo el ancho disponible */
+    max-width: 400px; /* Define un ancho máximo para evitar que sean demasiado anchas */
+    text-align: center; /* Centra el contenido */
+}
+
+/* Icono de usuario */
+.profile-icon {
+  color: #c1cdff; /* color1 */
+  margin-bottom: 15px;
+  height: 150px;
+}
+
+.profile-icon img {
+  margin: 20px;
+  height: 110px;
+}
+
+/* Estilos para el nombre y las etiquetas */
+.profile-name {
+  font-size: 30px;
+  font-weight: bold;
+  color: #c1cdff; /* color1 */
+}
+
+.profile-info {
+  font-size: 20px;
+  color: #ffefff; /* color2 */
+  margin: 3px;
+}
+
+.profile-info b {
+  color: #c1cdff; /* color1 */
+}
